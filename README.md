@@ -315,39 +315,25 @@ Visit http://localhost:8058/docs for interactive API documentation once the serv
 - **Streaming Responses**: Real-time AI responses with Server-Sent Events
 - **Flexible Providers**: Support for multiple LLM and embedding providers
 - **Semantic Chunking**: Intelligent document splitting using LLM analysis
-- **Production Ready**: Comprehensive testing, logging, and error handling
+- **Production Ready**: Logging, and error handling
 
 ## Project Structure
 
 ```
 agentic-rag-knowledge-graph/
-├── agent/                  # AI agent and API
+├── agent/                 # AI agent and API
 │   ├── agent.py           # Main Pydantic AI agent
 │   ├── api.py             # FastAPI application
 │   ├── providers.py       # LLM provider abstraction
 │   └── models.py          # Data models
 ├── ingestion/             # Document processing
-│   ├── ingest.py         # Main ingestion pipeline
-│   ├── chunker.py        # Semantic chunking
-│   └── embedder.py       # Embedding generation
+│   ├── ingest.py          # Main ingestion pipeline
+│   ├── chunker.py         # Semantic chunking
+│   └── embedder.py        # Embedding generation
 ├── sql/                   # Database schema
-├── documents/             # Your markdown files
-└── tests/                # Comprehensive test suite
+└── documents/             # Your markdown files
 ```
 
-## Running Tests
-
-```bash
-# Run all tests
-pytest
-
-# Run with coverage
-pytest --cov=agent --cov=ingestion --cov-report=html
-
-# Run specific test categories
-pytest tests/agent/
-pytest tests/ingestion/
-```
 
 ## Troubleshooting
 
@@ -373,5 +359,3 @@ python -m ingestion.ingest --verbose
 **LLM API Issues**: Check your API key and provider configuration in `.env`
 
 ---
-
-Built with ❤️ using Pydantic AI, FastAPI, PostgreSQL, and Neo4j.
