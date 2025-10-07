@@ -130,16 +130,8 @@ Add your markdown documents to the `documents/` folder:
 
 ```bash
 mkdir -p documents
-# Add your markdown files about tech companies, AI research, etc.
-# Example: documents/google_ai_initiatives.md
-#          documents/microsoft_openai_partnership.md
+# Add your markdown files
 ```
-
-**Note**: For a comprehensive example with extensive content, you can copy the provided `big_tech_docs` folder:
-```bash
-cp -r big_tech_docs/* documents/
-```
-This includes 21 detailed documents about major tech companies and their AI initiatives. Be aware that processing all these files into the knowledge graph will take significant time (potentially 30+ minutes) due to the computational complexity of entity extraction and relationship building.
 
 ### 2. Run Document Ingestion
 
